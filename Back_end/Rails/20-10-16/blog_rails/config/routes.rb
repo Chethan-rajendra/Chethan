@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'e' => 'employees#index'
+  # get 'e' => 'employees#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   # root 'welcome#index'
    get '/emp/new' => 'employees#new', :as => "new_employee"
    post '/employee' => 'employees#create', :as => "employee"
+
+   get '/employees' => 'employees#index', :as => "employees"
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

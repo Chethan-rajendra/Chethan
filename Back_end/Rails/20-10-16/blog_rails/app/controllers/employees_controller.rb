@@ -7,13 +7,19 @@ class EmployeesController < ApplicationController
 
 	def create
 		@employee = Employee.new
-		binding.pry
+		# binding.pry
 		@employee.firstname = params["employee"]["firstname"]
 		@employee.lastname = params["employee"]["lastname"]
 		@employee.employee_code = params["employee"]["employee_code"]
-		binding.pry
+		# binding.pry
 		@employee.save
 		redirect_to new_employee_path 
+	end
+	def index
+		@employees = Employee.all
+	end
+	def show
+		
 	end
 end
 
