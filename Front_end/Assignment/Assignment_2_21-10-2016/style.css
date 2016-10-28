@@ -1,92 +1,119 @@
+/* Body  */
 body {
     background-color: black;
 }
-#homepage{
+
+.container
+{
+	background-color: black;
 	font-family: "Times New Roman", Times, serif;
-	 font-weight: normal;
+	font-weight: normal;
+	font-size: 16px;
 	color:white;
+}
+
+#icon
+{
+	padding-left: 30px;
+	font-size: 15px;
+}
+
+#hicon
+{
+	padding:10px;
+}
+
+#heading
+{	
+	font-size: 40px;
+	font-weight: bold;
+}
+
+
+ @media (max-width: 480px) { 
+  	#heading
+  	{
+  		font-size:20px;
+  	}
+  	#icon
+  	{
+  		size: 5px;
+  	}
+  }
+  
+
+/*  Header */
+.container-fluid
+{
+	background-color: black;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: normal;
+	color:white;
+	font-size: 16px;
+}
+
+#nav-list {
+  
+ /* padding-right: 80px;*/*/
   font-size: 16px;
 }
-#aboutpage{
-	font-family: "Times New Roman", Times, serif;
-	 font-weight: normal;
-   font-size: 16px;
+
+#groove 
+{
+	border-style: groove;
+ 	padding: 5px;
+ }
+div.ridge {
+	border-style: ridge;
+	padding: 5px;
+}
+
+.tagline
+{
+	font-weight: normal;
+	font-size: 30px;
 	color:white;
 }
-#groove {border-style: groove;}
-div.ridge {border-style: ridge;}
 
-button {
-	color:red;
-}
-
-		.nav>li{
-			border:1px solid #e0d6d6;
-		}
-
-		.nav{
-			width: 100%;
-		}
-.nav {
-
-	font-size: 25px;
-}
-.nav li>a
-	{
-			text-align: center;
-			padding-left: 71px;
-			padding-right: 78px;
-			font-size: 25px;
+ @media (max-width: 480px) {
+ 	#tag
+ 	{
+ 		font-size: 20px;
+ 	}
  }
 
-
-#nav a:hover {
-	text-decoration: none;
-	font-family: Cambria, serif;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: normal;
-	text-transform: normal;
-	letter-spacing: normal;
-	line-height: 1.3em;
-	color: #000;
+	#float
+ {
+    float: left;
+    padding: 5px;
 }
+
+#more1
+{
+	float: right;
+	padding-right: 250px;
+}
+
+.pull-right
+{
+	padding-right: 80px;
+}
+
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-      width: 70%;
+      width: 90%;
+      height: 90%;
       margin: auto;
   }
 
-	.float
- {
-    float: left;
-}
 #more
 {
-vertical-align:-50px;
+	color: red;
+	font-size: 20px;
 }
 
-input[type=text] {
-	float:right;
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('images/images.png');
-    background-size: 50px 50px;
-    /*background-position: 10px 10px;*/
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
 
-input[type=text]:focus {
-    width: 60%;
-}
-
+/* ===== pagination ========*/
 ul.pagination {
     display: inline-block;
     padding: 0;
@@ -112,6 +139,40 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 
 
 
+/*  ======= search =========*/
+
+.search {
+	float:right;
+    width: 70px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('images/images.png');
+    background-size: 50px 50px;
+    /*background-position: 10px 10px;*/
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.search:focus {
+    width: 20%;
+}
+
+
+ @media (max-width: 480px) {
+ 	#search-bar
+ 	{
+ 		
+ 	}
+ }
+
+
+/* ========= Footer =========== */
 
 .footer-distributed{
 	background-color: #292c2f;
@@ -121,8 +182,8 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 	text-align: left;
 	font: bold 16px sans-serif;
 
-	padding: 55px 50px;
-	margin-top: 80px;
+	padding: 10px 25px;
+	margin-top: 100px;
 }
 
 .footer-distributed .footer-left,

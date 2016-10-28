@@ -1,0 +1,23 @@
+
+ <h2>The available books are</h2>
+ 
+<table border="5">
+  <tr>
+    <th>Book_name  </th>
+    <th>Author </th>
+    <th>Publication </th>
+  </tr>
+ 
+  <% @books.each do |b| %>
+    <tr>
+      <td><%= b.book_name %></td>
+      <td><%= b.author %></td>
+      <td><%= b.publication %></td>
+
+      <td><%= link_to 'Edit', book_edit_path(b) %></td>
+      <td><%= link_to 'Delete', book_destroy_path(b), method: :delete, data: {confirm: 'are you sure?'} %></td>
+    </tr>
+  <% end %>
+</table>
+<%= link_to 'add new book', book_create_path %>
+ 
